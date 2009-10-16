@@ -11,12 +11,14 @@
 @class OBNonRectButton;
 
 @interface NonRectangularButtonViewController : UIViewController {
+    UIButton *nonRectButton;
     UILabel *labelForNormalButton;
     UILabel *labelForNonRectButton;
     UIView *coloredViewForNormalButton;
     UIView *coloredViewForNonRectButton;
 }
 
+@property (nonatomic, retain) IBOutlet UIButton *nonRectButton;
 @property (nonatomic, retain) IBOutlet UILabel *labelForNormalButton;
 @property (nonatomic, retain) IBOutlet UILabel *labelForNonRectButton;
 @property (nonatomic, retain) IBOutlet UIView *coloredViewForNormalButton;

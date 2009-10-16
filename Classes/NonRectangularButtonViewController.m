@@ -21,6 +21,7 @@
 
 @implementation NonRectangularButtonViewController
 
+@synthesize nonRectButton;
 @synthesize labelForNormalButton;
 @synthesize labelForNonRectButton;
 @synthesize coloredViewForNormalButton;
@@ -30,6 +31,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.nonRectButton.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(2.0, 1.0), M_PI_2);
+    CGAffineTransform t = CGAffineTransformIdentity;
+    t = CGAffineTransformRotate(t, M_PI / 8.0f);
+    t = CGAffineTransformTranslate(t, 20.0f, 150.0f);
+    t = CGAffineTransformScale(t, 2.0f, 1.0f);
+    self.nonRectButton.transform = t;
 }
 
 
@@ -43,6 +51,7 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+    self.nonRectButton = nil;
     self.labelForNormalButton = nil;
     self.labelForNonRectButton = nil;
     self.coloredViewForNormalButton = nil;
@@ -51,6 +60,7 @@
 
 
 - (void)dealloc {
+    [nonRectButton release];
     [labelForNormalButton release];
     [labelForNonRectButton release];
     [coloredViewForNormalButton release];

@@ -18,6 +18,7 @@
 		5DF613EB10889D870098C211 /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF613E910889D870098C211 /* button-highlighted.png */; };
 		5DF613EC10889D870098C211 /* button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF613EA10889D870098C211 /* button-normal.png */; };
 		5DF613F810889F930098C211 /* OBNonRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */; };
+		5DF614D91088CA580098C211 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		5DF613EA10889D870098C211 /* button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-normal.png"; sourceTree = "<group>"; };
 		5DF613F610889F930098C211 /* OBNonRectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBNonRectButton.h; sourceTree = "<group>"; };
 		5DF613F710889F930098C211 /* OBNonRectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBNonRectButton.m; sourceTree = "<group>"; };
+		5DF614D71088CA580098C211 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NonRectangularButton-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NonRectangularButton-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +66,8 @@
 				28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */,
 				5DF613F610889F930098C211 /* OBNonRectButton.h */,
 				5DF613F710889F930098C211 /* OBNonRectButton.m */,
+				5DF614D71088CA580098C211 /* UIImage+ColorAtPixel.h */,
+				5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				1D3623260D0F684500981E51 /* NonRectangularButtonAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* NonRectangularButtonViewController.m in Sources */,
 				5DF613F810889F930098C211 /* OBNonRectButton.m in Sources */,
+				5DF614D91088CA580098C211 /* UIImage+ColorAtPixel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

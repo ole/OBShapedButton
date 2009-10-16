@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>OBNonRectButton.m</string>
+								<string>UIImage+ColorAtPixel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,18 +326,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>OBNonRectButton.m</string>
+										<string>UIImage+ColorAtPixel.m</string>
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>5DF614351088B3360098C211</string>
+										<string>5DF614E61088CB640098C211</string>
 										<key>history</key>
 										<array>
 											<string>5DF614231088B0B00098C211</string>
-											<string>5DF614241088B0B00098C211</string>
 											<string>5DF614251088B0B00098C211</string>
-											<string>5DF614261088B0B00098C211</string>
-											<string>5DF614271088B0B00098C211</string>
+											<string>5DF614881088BF9E0098C211</string>
+											<string>5DF614B11088C5760098C211</string>
+											<string>5DF614DA1088CAB30098C211</string>
+											<string>5DF614E21088CAC10098C211</string>
+											<string>5DF614E31088CAC10098C211</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -535,13 +537,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5DF614361088B3360098C211</string>
+		<string>5DF614E51088CAC10098C211</string>
+		<string>5DF614C81088C8720098C211</string>
+		<string>5DF614531088B82E0098C211</string>
 		<string>5DF6142A1088B0B00098C211</string>
 		<string>5DF6142B1088B0B00098C211</string>
 		<string>5DF613E410889B060098C211</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/elo/devel/iPhone/NonRectangularButton/NonRectangularButton.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/elo/devel/iPhone/NonRectangularButton/NonRectangularButton.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>11 356 1177 815 0 0 1920 1178 </string>
@@ -582,6 +586,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -665,8 +671,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {517, 339}}</string>
-											<string>{{0, 339}, {517, 340}}</string>
+											<string>{{0, 0}, {576, 345}}</string>
+											<string>{{0, 345}, {576, 449}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -681,8 +687,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {517, 679}}</string>
-											<string>{{517, 0}, {517, 679}}</string>
+											<string>{{0, 0}, {576, 794}}</string>
+											<string>{{576, 0}, {847, 794}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -702,7 +708,7 @@
 								<key>DebugSTDIOWindowFrame</key>
 								<string>{{200, 200}, {500, 300}}</string>
 								<key>Frame</key>
-								<string>{{0, 0}, {1034, 679}}</string>
+								<string>{{0, 0}, {1423, 794}}</string>
 								<key>PBXDebugSessionStackFrameViewKey</key>
 								<dict>
 									<key>DebugVariablesTableConfiguration</key>
@@ -712,24 +718,24 @@
 										<string>Value</string>
 										<real>85</real>
 										<string>Summary</string>
-										<real>287</real>
+										<real>346</real>
 									</array>
 									<key>Frame</key>
-									<string>{{0, 339}, {517, 340}}</string>
+									<string>{{0, 345}, {576, 449}}</string>
 									<key>RubberWindowFrame</key>
-									<string>32 428 1034 720 0 0 1920 1178 </string>
+									<string>32 313 1423 835 0 0 1920 1178 </string>
 								</dict>
 								<key>RubberWindowFrame</key>
-								<string>32 428 1034 720 0 0 1920 1178 </string>
+								<string>32 313 1423 835 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
 							<key>Proportion</key>
-							<string>679pt</string>
+							<string>794pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>679pt</string>
+					<string>794pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -754,7 +760,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
 			<key>WindowString</key>
-			<string>32 428 1034 720 0 0 1920 1178 </string>
+			<string>32 313 1423 835 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
@@ -888,18 +894,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {650, 209}}</string>
+								<string>{{0, 0}, {856, 251}}</string>
 								<key>RubberWindowFrame</key>
-								<string>140 188 650 250 0 0 1920 1178 </string>
+								<string>78 158 856 292 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
 							<key>Proportion</key>
-							<string>209pt</string>
+							<string>251pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>209pt</string>
+					<string>251pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -919,7 +925,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>140 188 650 250 0 0 1920 1178 </string>
+			<string>78 158 856 292 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
@@ -1365,33 +1371,40 @@
 			<integer>0</integer>
 		</dict>
 		<dict>
+			<key>FirstTimeWindowDisplayed</key>
+			<false/>
 			<key>Identifier</key>
 			<string>windowTool.refactoring</string>
 			<key>IncludeInToolsMenu</key>
 			<integer>0</integer>
+			<key>IsVertical</key>
+			<true/>
 			<key>Layout</key>
 			<array>
 				<dict>
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<integer>1</integer>
+							<key>ContentConfiguration</key>
+							<dict>
+								<key>PBXProjectModuleGUID</key>
+								<string>5DF614C71088C8720098C211</string>
+							</dict>
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{0, 0}, {500, 335}</string>
+								<string>{{0, 0}, {500, 315}}</string>
 								<key>RubberWindowFrame</key>
-								<string>{0, 0}, {500, 335}</string>
+								<string>32 792 500 356 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
 							<key>Proportion</key>
-							<string>100%</string>
+							<string>315pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>100%</string>
+					<string>315pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1400,8 +1413,20 @@
 			<array>
 				<string>XCRefactoringModule</string>
 			</array>
+			<key>StatusbarIsVisible</key>
+			<true/>
+			<key>TableOfContents</key>
+			<array>
+				<string>5DF614C81088C8720098C211</string>
+				<string>5DF614C91088C8720098C211</string>
+				<string>5DF614C71088C8720098C211</string>
+			</array>
 			<key>WindowString</key>
-			<string>200 200 500 356 0 0 1920 1200 </string>
+			<string>32 792 500 356 0 0 1920 1178 </string>
+			<key>WindowToolGUID</key>
+			<string>5DF614C81088C8720098C211</string>
+			<key>WindowToolIsVisible</key>
+			<false/>
 		</dict>
 	</array>
 </dict>
