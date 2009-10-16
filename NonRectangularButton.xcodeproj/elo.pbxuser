@@ -1,15 +1,42 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* NonRectangularButtonAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {818, 714}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 553}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* NonRectangularButton */ = {
 		activeExec = 0;
 		executables = (
 			5DF613D010889AFC0098C211 /* NonRectangularButton */,
 		);
 	};
+	28D7ACF60DDB3853001CB0EB /* NonRectangularButtonViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {818, 714}}";
+			sepNavSelRange = "{733, 0}";
+			sepNavVisRange = "{0, 822}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {818, 1290}}";
+			sepNavSelRange = "{1811, 0}";
+			sepNavVisRange = "{335, 1162}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 5DF613D010889AFC0098C211 /* NonRectangularButton */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* NonRectangularButton */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* NonRectangularButton */,
+		);
+		breakpoints = (
+			5DF614211088B0AB0098C211 /* OBNonRectButton.m:23 */,
+		);
 		codeSenseManager = 5DF613E710889B060098C211 /* Code sense */;
 		executables = (
 			5DF613D010889AFC0098C211 /* NonRectangularButton */,
@@ -20,7 +47,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					628,
 					20,
 					48.16259765625,
 					43,
@@ -40,6 +67,17 @@
 			PBXPerProjectTemplateStateSaveDate = 277388028;
 			PBXWorkspaceStateSaveDate = 277388028;
 		};
+		perUserProjectItems = {
+			5DF614231088B0B00098C211 /* PBXTextBookmark */ = 5DF614231088B0B00098C211 /* PBXTextBookmark */;
+			5DF614241088B0B00098C211 /* PBXTextBookmark */ = 5DF614241088B0B00098C211 /* PBXTextBookmark */;
+			5DF614251088B0B00098C211 /* PBXTextBookmark */ = 5DF614251088B0B00098C211 /* PBXTextBookmark */;
+			5DF614261088B0B00098C211 /* PBXTextBookmark */ = 5DF614261088B0B00098C211 /* PBXTextBookmark */;
+			5DF614271088B0B00098C211 /* PBXTextBookmark */ = 5DF614271088B0B00098C211 /* PBXTextBookmark */;
+			5DF614281088B0B00098C211 /* PBXTextBookmark */ = 5DF614281088B0B00098C211 /* PBXTextBookmark */;
+			5DF614301088B1060098C211 /* PBXTextBookmark */ = 5DF614301088B1060098C211 /* PBXTextBookmark */;
+			5DF614321088B11A0098C211 /* PBXTextBookmark */ = 5DF614321088B11A0098C211 /* PBXTextBookmark */;
+			5DF614351088B3360098C211 /* PBXTextBookmark */ = 5DF614351088B3360098C211 /* PBXTextBookmark */;
+		};
 		sourceControlManager = 5DF613E610889B060098C211 /* Source Control */;
 		userBuildSettings = {
 		};
@@ -51,7 +89,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -60,6 +98,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -67,9 +106,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = NonRectangularButton;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	5DF613E610889B060098C211 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -84,5 +127,127 @@
 	5DF613E710889B060098C211 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	5DF613F610889F930098C211 /* OBNonRectButton.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {818, 714}}";
+			sepNavSelRange = "{218, 0}";
+			sepNavVisRange = "{0, 227}";
+		};
+	};
+	5DF613F710889F930098C211 /* OBNonRectButton.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {818, 855}}";
+			sepNavSelRange = "{1865, 0}";
+			sepNavVisRange = "{151, 1888}";
+		};
+	};
+	5DF614211088B0AB0098C211 /* OBNonRectButton.m:23 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		functionName = "-pointInside:withEvent:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 23;
+		location = NonRectangularButton;
+		modificationTime = 277393689.484004;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	5DF614231088B0B00098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F610889F930098C211 /* OBNonRectButton.h */;
+		name = "OBNonRectButton.h: 13";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 227;
+		vrLoc = 0;
+	};
+	5DF614241088B0B00098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* NonRectangularButtonViewController.h */;
+		name = "NonRectangularButtonViewController.h: 23";
+		rLen = 0;
+		rLoc = 733;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 0;
+	};
+	5DF614251088B0B00098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* NonRectangularButtonAppDelegate.h */;
+		name = "NonRectangularButtonAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 553;
+		vrLoc = 0;
+	};
+	5DF614261088B0B00098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */;
+		name = "NonRectangularButtonViewController.m: 77";
+		rLen = 0;
+		rLoc = 1811;
+		rType = 0;
+		vrLen = 1162;
+		vrLoc = 335;
+	};
+	5DF614271088B0B00098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 19";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 1501;
+		vrLoc = 0;
+	};
+	5DF614281088B0B00098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 19";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 1501;
+		vrLoc = 0;
+	};
+	5DF614301088B1060098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 24";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 1595;
+		vrLoc = 0;
+	};
+	5DF614321088B11A0098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 24";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 1595;
+		vrLoc = 0;
+	};
+	5DF614351088B3360098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 49";
+		rLen = 0;
+		rLoc = 1865;
+		rType = 0;
+		vrLen = 1888;
+		vrLoc = 151;
 	};
 }

@@ -15,6 +15,9 @@
 		2899E5220DE3E06400AC0155 /* NonRectangularButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NonRectangularButtonViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* NonRectangularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */; };
+		5DF613EB10889D870098C211 /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF613E910889D870098C211 /* button-highlighted.png */; };
+		5DF613EC10889D870098C211 /* button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF613EA10889D870098C211 /* button-normal.png */; };
+		5DF613F810889F930098C211 /* OBNonRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,10 @@
 		28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonRectangularButtonViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* NonRectangularButton_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonRectangularButton_Prefix.pch; sourceTree = "<group>"; };
+		5DF613E910889D870098C211 /* button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-highlighted.png"; sourceTree = "<group>"; };
+		5DF613EA10889D870098C211 /* button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-normal.png"; sourceTree = "<group>"; };
+		5DF613F610889F930098C211 /* OBNonRectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBNonRectButton.h; sourceTree = "<group>"; };
+		5DF613F710889F930098C211 /* OBNonRectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBNonRectButton.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NonRectangularButton-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NonRectangularButton-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +61,8 @@
 				1D3623250D0F684500981E51 /* NonRectangularButtonAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* NonRectangularButtonViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */,
+				5DF613F610889F930098C211 /* OBNonRectButton.h */,
+				5DF613F710889F930098C211 /* OBNonRectButton.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,8 +99,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2899E5210DE3E06400AC0155 /* NonRectangularButtonViewController.xib */,
+				5DF613E910889D870098C211 /* button-highlighted.png */,
+				5DF613EA10889D870098C211 /* button-normal.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				2899E5210DE3E06400AC0155 /* NonRectangularButtonViewController.xib */,
 				8D1107310486CEB800E47090 /* NonRectangularButton-Info.plist */,
 			);
 			name = Resources;
@@ -151,6 +162,8 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* NonRectangularButtonViewController.xib in Resources */,
+				5DF613EB10889D870098C211 /* button-highlighted.png in Resources */,
+				5DF613EC10889D870098C211 /* button-normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* NonRectangularButtonAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* NonRectangularButtonViewController.m in Sources */,
+				5DF613F810889F930098C211 /* OBNonRectButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NonRectangularButtonViewController : UIViewController {
+@class OBNonRectButton;
 
+@interface NonRectangularButtonViewController : UIViewController {
+    UILabel *labelForNormalButton;
+    UILabel *labelForNonRectButton;
+    UIView *coloredViewForNormalButton;
+    UIView *coloredViewForNonRectButton;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *labelForNormalButton;
+@property (nonatomic, retain) IBOutlet UILabel *labelForNonRectButton;
+@property (nonatomic, retain) IBOutlet UIView *coloredViewForNormalButton;
+@property (nonatomic, retain) IBOutlet UIView *coloredViewForNonRectButton;
+
+- (void)normalButtonTapped:(id)sender;
+- (void)nonRectButtonTapped:(id)sender;
 
 @end
 

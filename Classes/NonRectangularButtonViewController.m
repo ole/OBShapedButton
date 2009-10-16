@@ -8,42 +8,30 @@
 
 #import "NonRectangularButtonViewController.h"
 
+
+@interface NonRectangularButtonViewController ()
+
+- (void)toggleBackgroundColorOfView:(UIView *)coloredView;
+
+@end
+
+
+
+
+
 @implementation NonRectangularButtonViewController
 
+@synthesize labelForNormalButton;
+@synthesize labelForNonRectButton;
+@synthesize coloredViewForNormalButton;
+@synthesize coloredViewForNonRectButton;
 
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-*/
 
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -55,11 +43,43 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+    self.labelForNormalButton = nil;
+    self.labelForNonRectButton = nil;
+    self.coloredViewForNormalButton = nil;
+    self.coloredViewForNonRectButton = nil;
 }
 
 
 - (void)dealloc {
+    [labelForNormalButton release];
+    [labelForNonRectButton release];
+    [coloredViewForNormalButton release];
+    [coloredViewForNonRectButton release];
     [super dealloc];
+}
+
+
+- (void)normalButtonTapped:(id)sender {
+    NSLog(@"%s", __FUNCTION__);
+    [self toggleBackgroundColorOfView:self.coloredViewForNormalButton];
+}
+
+
+- (void)nonRectButtonTapped:(id)sender {
+    NSLog(@"%s", __FUNCTION__);
+    [self toggleBackgroundColorOfView:self.coloredViewForNonRectButton];
+}
+
+
+- (void)toggleBackgroundColorOfView:(UIView *)coloredView {
+    UIColor *firstColor  = [UIColor redColor];
+    UIColor *secondColor = [UIColor greenColor];
+    
+    if (CGColorEqualToColor(coloredView.backgroundColor.CGColor, firstColor.CGColor)) {
+        coloredView.backgroundColor = secondColor;
+    } else {
+        coloredView.backgroundColor = firstColor;
+    }
 }
 
 @end
