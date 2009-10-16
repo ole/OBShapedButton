@@ -122,6 +122,12 @@
 			5DF614E31088CAC10098C211 /* XCBuildMessageTextBookmark */ = 5DF614E31088CAC10098C211 /* XCBuildMessageTextBookmark */;
 			5DF614E41088CAC10098C211 /* PBXTextBookmark */ = 5DF614E41088CAC10098C211 /* PBXTextBookmark */;
 			5DF614E61088CB640098C211 /* PBXTextBookmark */ = 5DF614E61088CB640098C211 /* PBXTextBookmark */;
+			5DF614E91088CD8B0098C211 /* PBXTextBookmark */ = 5DF614E91088CD8B0098C211 /* PBXTextBookmark */;
+			5DF614EA1088CD8B0098C211 /* PBXTextBookmark */ = 5DF614EA1088CD8B0098C211 /* PBXTextBookmark */;
+			5DF614EB1088CD8B0098C211 /* PBXTextBookmark */ = 5DF614EB1088CD8B0098C211 /* PBXTextBookmark */;
+			5DF614EC1088CD8B0098C211 /* PBXTextBookmark */ = 5DF614EC1088CD8B0098C211 /* PBXTextBookmark */;
+			5DF614F51088CDC90098C211 /* PBXTextBookmark */ = 5DF614F51088CDC90098C211 /* PBXTextBookmark */;
+			5DF614FB1088CE210098C211 /* PBXTextBookmark */ = 5DF614FB1088CE210098C211 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 5DF613E610889B060098C211 /* Source Control */;
 		userBuildSettings = {
@@ -182,9 +188,9 @@
 	};
 	5DF613F710889F930098C211 /* OBNonRectButton.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {818, 1410}}";
-			sepNavSelRange = "{1342, 0}";
-			sepNavVisRange = "{181, 1825}";
+			sepNavIntBoundsRect = "{{0, 0}, {818, 714}}";
+			sepNavSelRange = "{410, 0}";
+			sepNavVisRange = "{0, 1375}";
 		};
 	};
 	5DF614231088B0B00098C211 /* PBXTextBookmark */ = {
@@ -232,7 +238,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 19";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 0;
@@ -242,7 +248,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 19";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 0;
@@ -252,7 +258,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 24";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 0;
@@ -262,7 +268,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 24";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 0;
@@ -272,7 +278,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 49";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1888;
 		vrLoc = 151;
@@ -282,7 +288,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 28";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1964;
 		vrLoc = 181;
@@ -292,7 +298,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 33";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2060;
 		vrLoc = 279;
@@ -302,7 +308,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 30";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1958;
 		vrLoc = 151;
@@ -312,7 +318,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 30";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1958;
 		vrLoc = 151;
@@ -322,7 +328,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 30";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1969;
 		vrLoc = 151;
@@ -332,7 +338,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 30";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1969;
 		vrLoc = 151;
@@ -342,7 +348,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 30";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1971;
 		vrLoc = 151;
@@ -352,7 +358,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 17";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 695;
 		rType = 0;
 		vrLen = 1819;
 		vrLoc = 0;
@@ -362,7 +368,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 56";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2056;
 		vrLoc = 735;
@@ -372,7 +378,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 56";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2058;
 		vrLoc = 735;
@@ -382,7 +388,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 56";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2067;
 		vrLoc = 735;
@@ -392,7 +398,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 56";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2067;
 		vrLoc = 735;
@@ -402,7 +408,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 56";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2121;
 		vrLoc = 735;
@@ -412,7 +418,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 56";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2121;
 		vrLoc = 735;
@@ -422,7 +428,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 55";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 2001;
 		vrLoc = 735;
@@ -502,7 +508,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 19";
 		rLen = 0;
-		rLoc = 839;
+		rLoc = 765;
 		rType = 0;
 		vrLen = 1696;
 		vrLoc = 0;
@@ -512,7 +518,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 33";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1696;
 		vrLoc = 0;
@@ -522,7 +528,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 33";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1696;
 		vrLoc = 0;
@@ -612,7 +618,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 33";
 		rLen = 0;
-		rLoc = 1344;
+		rLoc = 1368;
 		rType = 0;
 		vrLen = 1696;
 		vrLoc = 0;
@@ -622,7 +628,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 44";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1370;
 		rType = 0;
 		vrLen = 1937;
 		vrLoc = 1128;
@@ -632,8 +638,8 @@
 		comments = "Expected ')' before ';' token";
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 84;
+		rLen = 0;
+		rLoc = 41;
 		rType = 1;
 	};
 	5DF614C31088C8480098C211 /* PBXTextBookmark */ = {
@@ -641,7 +647,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 77";
 		rLen = 0;
-		rLoc = 2372;
+		rLoc = 1370;
 		rType = 0;
 		vrLen = 1971;
 		vrLoc = 1077;
@@ -651,7 +657,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 64";
 		rLen = 0;
-		rLoc = 2372;
+		rLoc = 1370;
 		rType = 0;
 		vrLen = 1971;
 		vrLoc = 1075;
@@ -665,9 +671,9 @@
 	};
 	5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {818, 714}}";
+			sepNavIntBoundsRect = "{{0, 0}, {818, 825}}";
 			sepNavSelRange = "{279, 0}";
-			sepNavVisRange = "{0, 288}";
+			sepNavVisRange = "{0, 1985}";
 		};
 	};
 	5DF614DA1088CAB30098C211 /* PBXTextBookmark */ = {
@@ -685,7 +691,7 @@
 		fRef = 5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */;
 		name = "UIImage+ColorAtPixel.m: 15";
 		rLen = 0;
-		rLoc = 279;
+		rLoc = 2162;
 		rType = 0;
 		vrLen = 288;
 		vrLoc = 0;
@@ -695,7 +701,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 41";
 		rLen = 0;
-		rLoc = 1277;
+		rLoc = 1324;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 0;
@@ -705,7 +711,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 41";
 		rLen = 0;
-		rLoc = 1327;
+		rLoc = 1335;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 181;
@@ -715,7 +721,7 @@
 		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
 		name = "OBNonRectButton.m: 41";
 		rLen = 0;
-		rLoc = 1342;
+		rLoc = 1366;
 		rType = 0;
 		vrLen = 1825;
 		vrLoc = 181;
@@ -726,7 +732,7 @@
 		fRef = 5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 15;
+		rLoc = 51;
 		rType = 1;
 	};
 	5DF614E41088CAC10098C211 /* PBXTextBookmark */ = {
@@ -744,9 +750,69 @@
 		fRef = 5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */;
 		name = "UIImage+ColorAtPixel.m: 15";
 		rLen = 0;
-		rLoc = 279;
+		rLoc = 2162;
 		rType = 0;
 		vrLen = 288;
+		vrLoc = 0;
+	};
+	5DF614E91088CD8B0098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF614D71088CA580098C211 /* UIImage+ColorAtPixel.h */;
+		name = "UIImage+ColorAtPixel.h: 15";
+		rLen = 0;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 266;
+		vrLoc = 0;
+	};
+	5DF614EA1088CD8B0098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */;
+		name = "UIImage+ColorAtPixel.m: 15";
+		rLen = 0;
+		rLoc = 279;
+		rType = 0;
+		vrLen = 1985;
+		vrLoc = 0;
+	};
+	5DF614EB1088CD8B0098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 41";
+		rLen = 0;
+		rLoc = 1366;
+		rType = 0;
+		vrLen = 1745;
+		vrLoc = 261;
+	};
+	5DF614EC1088CD8B0098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 44";
+		rLen = 0;
+		rLoc = 1321;
+		rType = 0;
+		vrLen = 1864;
+		vrLoc = 412;
+	};
+	5DF614F51088CDC90098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 44";
+		rLen = 0;
+		rLoc = 1321;
+		rType = 0;
+		vrLen = 2040;
+		vrLoc = 660;
+	};
+	5DF614FB1088CE210098C211 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */;
+		name = "OBNonRectButton.m: 16";
+		rLen = 0;
+		rLoc = 410;
+		rType = 0;
+		vrLen = 1375;
 		vrLoc = 0;
 	};
 }

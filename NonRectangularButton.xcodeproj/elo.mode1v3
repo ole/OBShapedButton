@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>UIImage+ColorAtPixel.m</string>
+								<string>OBNonRectButton.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,20 +326,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>UIImage+ColorAtPixel.m</string>
+										<string>OBNonRectButton.m</string>
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>5DF614E61088CB640098C211</string>
+										<string>5DF614FB1088CE210098C211</string>
 										<key>history</key>
 										<array>
 											<string>5DF614231088B0B00098C211</string>
 											<string>5DF614251088B0B00098C211</string>
 											<string>5DF614881088BF9E0098C211</string>
 											<string>5DF614B11088C5760098C211</string>
-											<string>5DF614DA1088CAB30098C211</string>
-											<string>5DF614E21088CAC10098C211</string>
-											<string>5DF614E31088CAC10098C211</string>
+											<string>5DF614E91088CD8B0098C211</string>
+											<string>5DF614EA1088CD8B0098C211</string>
+											<string>5DF614EB1088CD8B0098C211</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -537,15 +537,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5DF614E51088CAC10098C211</string>
+		<string>5DF614FC1088CE210098C211</string>
 		<string>5DF614C81088C8720098C211</string>
 		<string>5DF614531088B82E0098C211</string>
 		<string>5DF6142A1088B0B00098C211</string>
 		<string>5DF6142B1088B0B00098C211</string>
 		<string>5DF613E410889B060098C211</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/elo/devel/iPhone/NonRectangularButton/NonRectangularButton.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>11 356 1177 815 0 0 1920 1178 </string>
