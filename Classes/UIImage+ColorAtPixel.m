@@ -27,14 +27,15 @@
  October, 2009
  */
 
+#import <CoreGraphics/CoreGraphics.h>
+
 #import "UIImage+ColorAtPixel.h"
 
 
 @implementation UIImage (ColorAtPixel)
 
 /*
- Returns the color of the image pixel at point in the Generic RGB color space.
- Returns nil if point lies outside the image bounds.
+ Returns the color of the image pixel at point. Returns nil if point lies outside the image bounds.
  If the point coordinates contain decimal parts, they will be truncated.
  
  To get at the pixel data, this method must draw the image into a bitmap context.
@@ -58,7 +59,7 @@
     CGImageRef cgImage = self.CGImage;
     NSUInteger width = CGImageGetWidth(cgImage);
     NSUInteger height = CGImageGetHeight(cgImage);
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     int bytesPerPixel = 4;
     int bytesPerRow = bytesPerPixel * 1;
     NSUInteger bitsPerComponent = 8;
