@@ -20,7 +20,8 @@ Usage
 
 Credits
 -------
-Written by Ole Begemann, http://oleb.net/, ole@oleb.net
+Written by Ole Begemann, ole@oleb.net
+http://oleb.net/blog/2009/10/obshapedbutton-non-rectangular-buttons-on-the-iphone/
 October, 2009
 
 
