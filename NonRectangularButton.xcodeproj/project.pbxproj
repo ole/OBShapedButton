@@ -7,37 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* NonRectangularButtonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NonRectangularButtonAppDelegate.m */; };
+		1D3623260D0F684500981E51 /* ShapedButtonDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ShapedButtonDemoAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* NonRectangularButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NonRectangularButtonViewController.xib */; };
+		2899E5220DE3E06400AC0155 /* ShapedButtonDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* ShapedButtonDemoViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* NonRectangularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */; };
+		28D7ACF80DDB3853001CB0EB /* ShapedButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */; };
+		5DD30B981089F34300F1262E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5DD30B971089F34300F1262E /* LICENSE.txt */; };
 		5DF613EB10889D870098C211 /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF613E910889D870098C211 /* button-highlighted.png */; };
 		5DF613EC10889D870098C211 /* button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF613EA10889D870098C211 /* button-normal.png */; };
-		5DF613F810889F930098C211 /* OBNonRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF613F710889F930098C211 /* OBNonRectButton.m */; };
+		5DF613F810889F930098C211 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF613F710889F930098C211 /* OBShapedButton.m */; };
 		5DF614D91088CA580098C211 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* NonRectangularButtonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonRectangularButtonAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* NonRectangularButtonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonRectangularButtonAppDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* ShapedButtonDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapedButtonDemoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ShapedButtonDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedButtonDemoAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* NonRectangularButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonRectangularButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* NonRectangularButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NonRectangularButtonViewController.xib; sourceTree = "<group>"; };
+		2899E5210DE3E06400AC0155 /* ShapedButtonDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShapedButtonDemoViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* NonRectangularButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonRectangularButtonViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonRectangularButtonViewController.m; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* ShapedButtonDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapedButtonDemoViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedButtonDemoViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* NonRectangularButton_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonRectangularButton_Prefix.pch; sourceTree = "<group>"; };
+		5DD30B971089F34300F1262E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5DD30B991089F37B00F1262E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		5DF613E910889D870098C211 /* button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-highlighted.png"; sourceTree = "<group>"; };
 		5DF613EA10889D870098C211 /* button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-normal.png"; sourceTree = "<group>"; };
-		5DF613F610889F930098C211 /* OBNonRectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBNonRectButton.h; sourceTree = "<group>"; };
-		5DF613F710889F930098C211 /* OBNonRectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBNonRectButton.m; sourceTree = "<group>"; };
+		5DF613F610889F930098C211 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
+		5DF613F710889F930098C211 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
 		5DF614D71088CA580098C211 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NonRectangularButton-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NonRectangularButton-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -60,12 +63,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* NonRectangularButtonAppDelegate.h */,
-				1D3623250D0F684500981E51 /* NonRectangularButtonAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* NonRectangularButtonViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* NonRectangularButtonViewController.m */,
-				5DF613F610889F930098C211 /* OBNonRectButton.h */,
-				5DF613F710889F930098C211 /* OBNonRectButton.m */,
+				1D3623240D0F684500981E51 /* ShapedButtonDemoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ShapedButtonDemoAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* ShapedButtonDemoViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */,
+				5DF613F610889F930098C211 /* OBShapedButton.h */,
+				5DF613F710889F930098C211 /* OBShapedButton.m */,
 				5DF614D71088CA580098C211 /* UIImage+ColorAtPixel.h */,
 				5DF614D81088CA580098C211 /* UIImage+ColorAtPixel.m */,
 			);
@@ -83,6 +86,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5DD30B991089F37B00F1262E /* README.markdown */,
+				5DD30B971089F34300F1262E /* LICENSE.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -107,7 +112,7 @@
 				5DF613E910889D870098C211 /* button-highlighted.png */,
 				5DF613EA10889D870098C211 /* button-normal.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				2899E5210DE3E06400AC0155 /* NonRectangularButtonViewController.xib */,
+				2899E5210DE3E06400AC0155 /* ShapedButtonDemoViewController.xib */,
 				8D1107310486CEB800E47090 /* NonRectangularButton-Info.plist */,
 			);
 			name = Resources;
@@ -166,9 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* NonRectangularButtonViewController.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* ShapedButtonDemoViewController.xib in Resources */,
 				5DF613EB10889D870098C211 /* button-highlighted.png in Resources */,
 				5DF613EC10889D870098C211 /* button-normal.png in Resources */,
+				5DD30B981089F34300F1262E /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,9 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* NonRectangularButtonAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* NonRectangularButtonViewController.m in Sources */,
-				5DF613F810889F930098C211 /* OBNonRectButton.m in Sources */,
+				1D3623260D0F684500981E51 /* ShapedButtonDemoAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* ShapedButtonDemoViewController.m in Sources */,
+				5DF613F810889F930098C211 /* OBShapedButton.m in Sources */,
 				5DF614D91088CA580098C211 /* UIImage+ColorAtPixel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
