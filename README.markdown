@@ -1,0 +1,47 @@
+OBShapedButton
+==============
+
+OBShapedButton is a UIButton subclass optimized for non-rectangular button shapes.
+Instances of OBShapedButton respond to touches only in areas where the image that is
+assigned to the button for UIControlStateNormal is non-transparent.
+
+ 
+Usage
+-----
+
+* Add OBShapedButton.h, OBShapedButton.m, UIImage+ColorAtPixel.h, and UIImage+ColorAtPixel.m
+  to your Xcode project.
+* Design your UI in Interface Builder with UIButtons as usual. Set the Button type to Custom
+  and provide transparent PNG images for the different control states as needed.
+* In the Identity Inspector in Interface Builder, set the Class of the button to OBShapedButton.
+  That's it! Your button will now only respond to touches where the PNG image for the normal
+  control state is non-transparent.
+
+
+Credits
+-------
+Written by Ole Begemann, http://oleb.net/, ole@oleb.net
+October, 2009
+
+
+MIT License
+-----------
+Copyright (c) 2009 Ole Begemann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
