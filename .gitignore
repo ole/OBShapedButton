@@ -1,1 +1,6 @@
 ShapedButtonDemo/build
+.DS_Store
+build/
+*.pbxuser
+*.mode1v3
+xcuserdata/
