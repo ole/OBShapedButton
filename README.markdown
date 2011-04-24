@@ -24,6 +24,9 @@ Written by Ole Begemann, ole@oleb.net
 http://oleb.net/blog/2009/10/obshapedbutton-non-rectangular-buttons-on-the-iphone/  
 October, 2009
 
+Corrected some serious bugs in April 2011. Thanks to the commenters on my blog and those who 
+posted issues on GitHub for pointing them out, including the fixes.
+
 
 MIT License
 -----------
