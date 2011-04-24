@@ -51,6 +51,13 @@
         return YES;
     }
     
+    // Correct point to take into account that the image does not have to be the same size
+    // as the button. See https://github.com/ole/OBShapedButton/issues/1
+    CGSize iSize = buttonImage.size;
+    CGSize bSize = self.frame.size;
+    point.x *= (bSize.width != 0) ? (iSize.width / bSize.width) : 1;
+    point.y *= (bSize.height != 0) ? (iSize.height / bSize.height) : 1;
+    
     CGColorRef pixelColor = [[buttonImage colorAtPixel:point] CGColor];
     CGFloat alpha = CGColorGetAlpha(pixelColor);
     return alpha >= kAlphaVisibleThreshold;
