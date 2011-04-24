@@ -30,15 +30,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class ShapedButtonDemoViewController;
-
 @interface ShapedButtonDemoAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    ShapedButtonDemoViewController *viewController;
+    UITabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet ShapedButtonDemoViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end
 

@@ -34,22 +34,21 @@
 @implementation ShapedButtonDemoAppDelegate
 
 @synthesize window;
-@synthesize viewController;
+@synthesize tabBarController;
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
     // Override point for customization after app launch    
-    [window addSubview:viewController.view];
+    [window addSubview:self.tabBarController.view];
     [window makeKeyAndVisible];
 }
 
 
 - (void)dealloc {
-    [viewController release];
+    [tabBarController release];
     [window release];
     [super dealloc];
 }
-
 
 @end

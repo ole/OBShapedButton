@@ -14,6 +14,8 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* ShapedButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */; };
+		5DB713311364B7140012BD79 /* ComplexShapesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB7132F1364B7140012BD79 /* ComplexShapesDemoViewController.m */; };
+		5DB713321364B7140012BD79 /* ComplexShapesDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB713301364B7140012BD79 /* ComplexShapesDemoViewController.xib */; };
 		5DD30C1D108A0E5B00F1262E /* ShapedButtonDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD30C1C108A0E5B00F1262E /* ShapedButtonDemoViewController.xib */; };
 		5DD30C20108A0E6300F1262E /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD30C1E108A0E6300F1262E /* button-highlighted.png */; };
 		5DD30C21108A0E6300F1262E /* button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD30C1F108A0E6300F1262E /* button-normal.png */; };
@@ -33,6 +35,9 @@
 		28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedButtonDemoViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ShapedButtonDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapedButtonDemo_Prefix.pch; sourceTree = "<group>"; };
+		5DB7132E1364B7140012BD79 /* ComplexShapesDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComplexShapesDemoViewController.h; path = ../../../../iOS/OBShapedButton/ShapedButtonDemo/Classes/ComplexShapesDemoViewController.h; sourceTree = "<group>"; };
+		5DB7132F1364B7140012BD79 /* ComplexShapesDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComplexShapesDemoViewController.m; path = ../../../../iOS/OBShapedButton/ShapedButtonDemo/Classes/ComplexShapesDemoViewController.m; sourceTree = "<group>"; };
+		5DB713301364B7140012BD79 /* ComplexShapesDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ComplexShapesDemoViewController.xib; path = ../../../iOS/OBShapedButton/ShapedButtonDemo/ComplexShapesDemoViewController.xib; sourceTree = "<group>"; };
 		5DD30C1C108A0E5B00F1262E /* ShapedButtonDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShapedButtonDemoViewController.xib; sourceTree = "<group>"; };
 		5DD30C1E108A0E6300F1262E /* button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-highlighted.png"; sourceTree = "<group>"; };
 		5DD30C1F108A0E6300F1262E /* button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-normal.png"; sourceTree = "<group>"; };
@@ -64,6 +69,8 @@
 				1D3623250D0F684500981E51 /* ShapedButtonDemoAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* ShapedButtonDemoViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */,
+				5DB7132E1364B7140012BD79 /* ComplexShapesDemoViewController.h */,
+				5DB7132F1364B7140012BD79 /* ComplexShapesDemoViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -102,8 +109,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5DD30C1C108A0E5B00F1262E /* ShapedButtonDemoViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				5DD30C1C108A0E5B00F1262E /* ShapedButtonDemoViewController.xib */,
+				5DB713301364B7140012BD79 /* ComplexShapesDemoViewController.xib */,
 				8D1107310486CEB800E47090 /* ShapedButtonDemo-Info.plist */,
 				5DD30C1E108A0E6300F1262E /* button-highlighted.png */,
 				5DD30C1F108A0E6300F1262E /* button-normal.png */,
@@ -191,6 +199,7 @@
 				5DD30C1D108A0E5B00F1262E /* ShapedButtonDemoViewController.xib in Resources */,
 				5DD30C20108A0E6300F1262E /* button-highlighted.png in Resources */,
 				5DD30C21108A0E6300F1262E /* button-normal.png in Resources */,
+				5DB713321364B7140012BD79 /* ComplexShapesDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +215,7 @@
 				28D7ACF80DDB3853001CB0EB /* ShapedButtonDemoViewController.m in Sources */,
 				5DD30C31108A0EB800F1262E /* OBShapedButton.m in Sources */,
 				5DD30C34108A0EC200F1262E /* UIImage+ColorAtPixel.m in Sources */,
+				5DB713311364B7140012BD79 /* ComplexShapesDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
