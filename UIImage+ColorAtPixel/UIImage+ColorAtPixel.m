@@ -57,8 +57,8 @@
     NSInteger pointX = trunc(point.x);
     NSInteger pointY = trunc(point.y);
     CGImageRef cgImage = self.CGImage;
-    NSUInteger width = CGImageGetWidth(cgImage);
-    NSUInteger height = CGImageGetHeight(cgImage);
+    NSUInteger width = self.size.width;
+    NSUInteger height = self.size.height;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     int bytesPerPixel = 4;
     int bytesPerRow = bytesPerPixel * 1;
@@ -75,7 +75,7 @@
     CGContextSetBlendMode(context, kCGBlendModeCopy);
 
     // Draw the pixel we are interested in onto the bitmap context
-    CGContextTranslateCTM(context, -pointX, pointY-(NSInteger)height);
+    CGContextTranslateCTM(context, -pointX, pointY-(CGFloat)height);
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, (CGFloat)width, (CGFloat)height), cgImage);
     CGContextRelease(context);
     
