@@ -49,7 +49,7 @@
 
 // -[UIView hitTest:withEvent: ignores views that an alpha level less than 0.1.
 // So we will do the same and treat pixels with alpha < 0.1 as transparent.
-#define kAlphaVisibleThreshold (0.1f);
+#define kAlphaVisibleThreshold (0.1f)
 
 
 @interface OBShapedButton : UIButton {
