@@ -27,6 +27,10 @@ October, 2009
 Corrected some serious bugs in April 2011. Thanks to the commenters on my blog and those who 
 posted issues on GitHub for pointing them out, including the fixes.
 
+Contributors:
+
+* [balabhadra](https://github.com/balabhadra) added support for background images.
+
 
 MIT License
 -----------
