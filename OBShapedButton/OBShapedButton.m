@@ -39,7 +39,7 @@
     // Correct point to take into account that the image does not have to be the same size
     // as the button. See https://github.com/ole/OBShapedButton/issues/1
     CGSize iSize = image.size;
-    CGSize bSize = self.frame.size;
+    CGSize bSize = self.bounds.size;
     point.x *= (bSize.width != 0) ? (iSize.width / bSize.width) : 1;
     point.y *= (bSize.height != 0) ? (iSize.height / bSize.height) : 1;
 
