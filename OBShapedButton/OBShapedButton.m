@@ -85,7 +85,8 @@
         [pixelColor getRed:NULL green:NULL blue:NULL alpha:&alpha];
     }
     else
-    {// In iOS 6.1 the code is not working in release mode, it works only in debug
+    {// for iOS < 5.0
+     // In iOS 6.1 the code is not working in release mode, it works only in debug
      // CGColorGetAlpha always return 0.
         CGColorRef cgPixelColor = [pixelColor CGColor];
         alpha = CGColorGetAlpha(cgPixelColor);
