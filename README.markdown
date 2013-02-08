@@ -30,6 +30,7 @@ posted issues on GitHub for pointing them out, including the fixes.
 Contributors:
 
 * [balabhadra](https://github.com/balabhadra) added support for background images.
+* [yurkins](https://github.com/yurkins) fixed an issue that only occurred in release builds.
 
 
 MIT License
