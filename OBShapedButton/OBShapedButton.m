@@ -32,6 +32,10 @@
 
 
 @interface OBShapedButton ()
+{
+  UIImage *buttonImage;
+  UIImage *buttonBackground;
+}
 
 @property (nonatomic, assign) CGPoint previousTouchPoint;
 @property (nonatomic, assign) BOOL previousTouchHitTestResponse;
@@ -113,10 +117,6 @@
     } else {
         self.previousTouchPoint = point;
     }
-    
-    // We can't test the image's alpha channel if the button has no image. Fall back to super.
-    UIImage *buttonImage = [self imageForState:UIControlStateNormal];
-    UIImage *buttonBackground = [self backgroundImageForState:UIControlStateNormal];
 
     BOOL response = NO;
     
@@ -145,14 +145,36 @@
 // Reset the Hit Test Cache when a new image is assigned to the button
 - (void)setImage:(UIImage *)image forState:(UIControlState)state
 {
-    [super setImage:image forState:state];
-    [self resetHitTestCache];
+  [super setImage:image forState:state];
+  [self getImagesForCurrentState];
+  [self resetHitTestCache];
 }
 
 - (void)setBackgroundImage:(UIImage *)image forState:(UIControlState)state
 {
-    [super setBackgroundImage:image forState:state];
-    [self resetHitTestCache];
+  [super setBackgroundImage:image forState:state];
+  [self getImagesForCurrentState];
+  [self resetHitTestCache];
+}
+
+- (void)setEnabled:(BOOL)enabled{
+  [super setEnabled:enabled];
+  [self getImagesForCurrentState];
+}
+
+- (void)setHighlighted:(BOOL)highlighted{
+  [super setHighlighted:highlighted];
+  [self getImagesForCurrentState];
+}
+
+- (void)setSelected:(BOOL)selected{
+  [super setSelected:selected];
+  [self getImagesForCurrentState];
+}
+
+- (void)getImagesForCurrentState{
+  buttonBackground = [self currentBackgroundImage];
+  buttonImage = [self currentImage];
 }
 
 - (void)resetHitTestCache
