@@ -145,18 +145,34 @@
 // Reset the Hit Test Cache when a new image is assigned to the button
 - (void)setImage:(UIImage *)image forState:(UIControlState)state
 {
-  //If the image is going to change this will be called, we can avoid grabbing a new image every touch.
-    buttonImage = image;
     [super setImage:image forState:state];
     [self resetHitTestCache];
 }
 
 - (void)setBackgroundImage:(UIImage *)image forState:(UIControlState)state
 {
-  //If the background image is going to change this will be called, we can avoid grabbing a new image every touch.
-    buttonBackground = image;
     [super setBackgroundImage:image forState:state];
     [self resetHitTestCache];
+}
+
+- (void)setEnabled:(BOOL)enabled{
+  [super setEnabled:enabled];
+  [self getImagesForCurrentState];
+}
+
+- (void)setHighlighted:(BOOL)highlighted{
+  [super setHighlighted:highlighted];
+  [self getImagesForCurrentState];
+}
+
+- (void)setSelected:(BOOL)selected{
+  [super setSelected:selected];
+  [self getImagesForCurrentState];
+}
+
+- (void)getImagesForCurrentState{
+  buttonBackground = [self currentBackgroundImage];
+  buttonImage = [self currentImage];
 }
 
 - (void)resetHitTestCache
