@@ -32,6 +32,10 @@
 
 
 @interface OBShapedButton ()
+{
+  UIImage *buttonImage;
+  UIImage *buttonBackground;
+}
 
 @property (nonatomic, assign) CGPoint previousTouchPoint;
 @property (nonatomic, assign) BOOL previousTouchHitTestResponse;
@@ -113,10 +117,6 @@
     } else {
         self.previousTouchPoint = point;
     }
-    
-    // We can't test the image's alpha channel if the button has no image. Fall back to super.
-    UIImage *buttonImage = [self imageForState:UIControlStateNormal];
-    UIImage *buttonBackground = [self backgroundImageForState:UIControlStateNormal];
 
     BOOL response = NO;
     
@@ -145,12 +145,16 @@
 // Reset the Hit Test Cache when a new image is assigned to the button
 - (void)setImage:(UIImage *)image forState:(UIControlState)state
 {
+  //If the image is going to change this will be called, we can avoid grabbing a new image every touch.
+    buttonImage = image;
     [super setImage:image forState:state];
     [self resetHitTestCache];
 }
 
 - (void)setBackgroundImage:(UIImage *)image forState:(UIControlState)state
 {
+  //If the background image is going to change this will be called, we can avoid grabbing a new image every touch.
+    buttonBackground = image;
     [super setBackgroundImage:image forState:state];
     [self resetHitTestCache];
 }
