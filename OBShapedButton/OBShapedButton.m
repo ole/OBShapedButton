@@ -32,13 +32,11 @@
 
 
 @interface OBShapedButton ()
-{
-  UIImage *buttonImage;
-  UIImage *buttonBackground;
-}
 
 @property (nonatomic, assign) CGPoint previousTouchPoint;
 @property (nonatomic, assign) BOOL previousTouchHitTestResponse;
+@property (nonatomic, strong) UIImage *buttonImage;
+@property (nonatomic, strong) UIImage *buttonBackground;
 
 - (void)resetHitTestCache;
 
@@ -49,6 +47,8 @@
 
 @synthesize previousTouchPoint = _previousTouchPoint;
 @synthesize previousTouchHitTestResponse = _previousTouchHitTestResponse;
+@synthesize buttonImage = _buttonImage;
+@synthesize buttonBackground = _buttonBackground;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -82,7 +82,6 @@
 
     UIColor *pixelColor = [image colorAtPixel:point];
     CGFloat alpha = 0.0;
-    
     
     if ([pixelColor respondsToSelector:@selector(getRed:green:blue:alpha:)])
     {// available from iOS 5.0
@@ -120,20 +119,20 @@
 
     BOOL response = NO;
     
-    if (buttonImage == nil && buttonBackground == nil) {
+    if (self.buttonImage == nil && self.buttonBackground == nil) {
         response = YES;
     }
-    else if (buttonImage != nil && buttonBackground == nil) {
-        response = [self isAlphaVisibleAtPoint:point forImage:buttonImage];
+    else if (self.buttonImage != nil && self.buttonBackground == nil) {
+        response = [self isAlphaVisibleAtPoint:point forImage:self.buttonImage];
     }
-    else if (buttonImage == nil && buttonBackground != nil) {
-        response = [self isAlphaVisibleAtPoint:point forImage:buttonBackground];
+    else if (self.buttonImage == nil && self.buttonBackground != nil) {
+        response = [self isAlphaVisibleAtPoint:point forImage:self.buttonBackground];
     }
     else {
-        if ([self isAlphaVisibleAtPoint:point forImage:buttonImage]) {
+        if ([self isAlphaVisibleAtPoint:point forImage:self.buttonImage]) {
             response = YES;
         } else {
-            response = [self isAlphaVisibleAtPoint:point forImage:buttonBackground];
+            response = [self isAlphaVisibleAtPoint:point forImage:self.buttonBackground];
         }
     }
     
@@ -145,36 +144,40 @@
 // Reset the Hit Test Cache when a new image is assigned to the button
 - (void)setImage:(UIImage *)image forState:(UIControlState)state
 {
-  [super setImage:image forState:state];
-  [self getImagesForCurrentState];
-  [self resetHitTestCache];
+    [super setImage:image forState:state];
+    [self updateImageCacheForCurrentState];
+    [self resetHitTestCache];
 }
 
 - (void)setBackgroundImage:(UIImage *)image forState:(UIControlState)state
 {
-  [super setBackgroundImage:image forState:state];
-  [self getImagesForCurrentState];
-  [self resetHitTestCache];
+    [super setBackgroundImage:image forState:state];
+    [self updateImageCacheForCurrentState];
+    [self resetHitTestCache];
 }
 
-- (void)setEnabled:(BOOL)enabled{
-  [super setEnabled:enabled];
-  [self getImagesForCurrentState];
+- (void)setEnabled:(BOOL)enabled
+{
+    [super setEnabled:enabled];
+    [self updateImageCacheForCurrentState];
 }
 
-- (void)setHighlighted:(BOOL)highlighted{
-  [super setHighlighted:highlighted];
-  [self getImagesForCurrentState];
+- (void)setHighlighted:(BOOL)highlighted
+{
+    [super setHighlighted:highlighted];
+    [self updateImageCacheForCurrentState];
 }
 
-- (void)setSelected:(BOOL)selected{
-  [super setSelected:selected];
-  [self getImagesForCurrentState];
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    [self updateImageCacheForCurrentState];
 }
 
-- (void)getImagesForCurrentState{
-  buttonBackground = [self currentBackgroundImage];
-  buttonImage = [self currentImage];
+- (void)updateImageCacheForCurrentState
+{
+    _buttonBackground = [self currentBackgroundImage];
+    _buttonImage = [self currentImage];
 }
 
 - (void)resetHitTestCache
