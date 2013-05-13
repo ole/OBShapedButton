@@ -30,9 +30,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShapedButtonDemoViewController : UIViewController {
-
-}
-
+@interface ShapedButtonDemoViewController : UIViewController
 @end
-

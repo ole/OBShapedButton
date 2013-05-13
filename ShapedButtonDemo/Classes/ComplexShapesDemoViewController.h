@@ -8,9 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ComplexShapesDemoViewController : UIViewController {
-    
-}
-
+@interface ComplexShapesDemoViewController : UIViewController
 @end

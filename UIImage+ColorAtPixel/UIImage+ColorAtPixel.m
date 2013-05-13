@@ -28,9 +28,7 @@
  */
 
 #import <CoreGraphics/CoreGraphics.h>
-
 #import "UIImage+ColorAtPixel.h"
-
 
 @implementation UIImage (ColorAtPixel)
 
@@ -45,12 +43,12 @@
  this approach is probably less efficient than drawing the entire image into memory
  once and caching it.
  */
-- (UIColor *)colorAtPixel:(CGPoint)point {
+- (UIColor *)colorAtPixel:(CGPoint)point
+{
     // Cancel if point is outside image coordinates
     if (!CGRectContainsPoint(CGRectMake(0.0f, 0.0f, self.size.width, self.size.height), point)) {
         return nil;
     }
-    
     
     // Create a 1x1 pixel byte array and bitmap context to draw the pixel into.
     // Reference: http://stackoverflow.com/questions/1042830/retrieving-a-pixel-alpha-value-for-a-uiimage

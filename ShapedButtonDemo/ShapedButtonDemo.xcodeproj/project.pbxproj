@@ -83,12 +83,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2DEFB36C140B6D8F0098082E /* ComplexShapesDemoViewController.h */,
-				2DEFB36D140B6D8F0098082E /* ComplexShapesDemoViewController.m */,
 				1D3623240D0F684500981E51 /* ShapedButtonDemoAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ShapedButtonDemoAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* ShapedButtonDemoViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* ShapedButtonDemoViewController.m */,
+				2DEFB36C140B6D8F0098082E /* ComplexShapesDemoViewController.h */,
+				2DEFB36D140B6D8F0098082E /* ComplexShapesDemoViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

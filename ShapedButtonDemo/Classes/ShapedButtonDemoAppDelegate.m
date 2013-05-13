@@ -33,15 +33,10 @@
 
 @implementation ShapedButtonDemoAppDelegate
 
-@synthesize window;
-@synthesize tabBarController;
-
-
-- (void)applicationDidFinishLaunching:(UIApplication * __attribute__((unused)))application {    
-    
-    // Override point for customization after app launch    
-    [window addSubview:self.tabBarController.view];
-    [window makeKeyAndVisible];
+- (void)applicationDidFinishLaunching:(UIApplication * __attribute__((unused)))application
+{
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
 }
 
 @end

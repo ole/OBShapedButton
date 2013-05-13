@@ -30,7 +30,6 @@
 #import "OBShapedButton.h"
 #import "UIImage+ColorAtPixel.h"
 
-
 @interface OBShapedButton ()
 
 @property (nonatomic, assign) CGPoint previousTouchPoint;
@@ -38,17 +37,13 @@
 @property (nonatomic, strong) UIImage *buttonImage;
 @property (nonatomic, strong) UIImage *buttonBackground;
 
+- (void)updateImageCacheForCurrentState;
 - (void)resetHitTestCache;
 
 @end
 
 
 @implementation OBShapedButton
-
-@synthesize previousTouchPoint = _previousTouchPoint;
-@synthesize previousTouchHitTestResponse = _previousTouchHitTestResponse;
-@synthesize buttonImage = _buttonImage;
-@synthesize buttonBackground = _buttonBackground;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -85,13 +80,15 @@
     CGFloat alpha = 0.0;
     
     if ([pixelColor respondsToSelector:@selector(getRed:green:blue:alpha:)])
-    {// available from iOS 5.0
+    {
+        // available from iOS 5.0
         [pixelColor getRed:NULL green:NULL blue:NULL alpha:&alpha];
     }
     else
-    {// for iOS < 5.0
-     // In iOS 6.1 the code is not working in release mode, it works only in debug
-     // CGColorGetAlpha always return 0.
+    {
+        // for iOS < 5.0
+        // In iOS 6.1 this code is not working in release mode, it works only in debug
+        // CGColorGetAlpha always return 0.
         CGColorRef cgPixelColor = [pixelColor CGColor];
         alpha = CGColorGetAlpha(cgPixelColor);
     }
@@ -142,6 +139,8 @@
 }
 
 
+#pragma mark - Accessors
+
 // Reset the Hit Test Cache when a new image is assigned to the button
 - (void)setImage:(UIImage *)image forState:(UIControlState)state
 {
@@ -174,6 +173,9 @@
     [super setSelected:selected];
     [self updateImageCacheForCurrentState];
 }
+
+
+#pragma mark - Helper methods
 
 - (void)updateImageCacheForCurrentState
 {
