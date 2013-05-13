@@ -37,7 +37,7 @@
 @synthesize tabBarController;
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+- (void)applicationDidFinishLaunching:(UIApplication * __attribute__((unused)))application {    
     
     // Override point for customization after app launch    
     [window addSubview:self.tabBarController.view];
