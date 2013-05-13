@@ -54,20 +54,21 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self resetHitTestCache];
+        [self setup];
     }
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)decoder
+- (void)awakeFromNib
 {
-    self = [super initWithCoder:decoder];
-    if (self) {
-        [self resetHitTestCache];
-    }
-    return self;
+    [self setup];
 }
 
+- (void)setup
+{
+    [self updateImageCacheForCurrentState];
+    [self resetHitTestCache];
+}
 
 #pragma mark - Hit testing
 
