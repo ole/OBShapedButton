@@ -31,6 +31,7 @@ Contributors:
 
 * [balabhadra](https://github.com/balabhadra) added support for background images.
 * [yurkins](https://github.com/yurkins) fixed an issue that only occurred in release builds.
+* [Steven Zweier](https://github.com/SteveZz) fixed an issue that would intermittently result in wrong hit tests.
 
 
 MIT License
