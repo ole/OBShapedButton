@@ -6,14 +6,28 @@ Instances of OBShapedButton respond to touches only in areas where the image tha
 assigned to the button for UIControlStateNormal is non-transparent.
 
  
+How to Install
+--------------
+
+### Installation via CocoaPods
+
+If possible, you should install `OBShapedButton` via [CocoaPods](http://cocoapods.org):
+
+    $ edit Podfile
+    platform :ios
+    pod 'OBShapedButton'
+
+### Manual Installation
+
+If you cannot use CocoaPods for whatever reason, manually add OBShapedButton.h, OBShapedButton.m, UIImage+ColorAtPixel.h, and UIImage+ColorAtPixel.m to your Xcode project.
+
+
 Usage
 -----
 
-* Add OBShapedButton.h, OBShapedButton.m, UIImage+ColorAtPixel.h, and UIImage+ColorAtPixel.m
-  to your Xcode project.
 * Design your UI in Interface Builder with UIButtons as usual. Set the Button type to Custom
   and provide transparent PNG images for the different control states as needed.
-* In the Identity Inspector in Interface Builder, set the Class of the button to OBShapedButton.
+* In the Identity Inspector in Interface Builder, set the Class of the button to `OBShapedButton`.
   That's it! Your button will now only respond to touches where the PNG image for the normal
   control state is non-transparent.
 
