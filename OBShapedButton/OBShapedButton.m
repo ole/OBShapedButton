@@ -61,6 +61,8 @@
 
 - (void)setup
 {
+    self.alphaVisibleThreshold = 0.1f; // Defaults to 0.1
+    
     [self updateImageCacheForCurrentState];
     [self resetHitTestCache];
 }
@@ -92,7 +94,7 @@
         CGColorRef cgPixelColor = [pixelColor CGColor];
         alpha = CGColorGetAlpha(cgPixelColor);
     }
-    return alpha >= kAlphaVisibleThreshold;
+    return alpha >= self.alphaVisibleThreshold;
 }
 
 
