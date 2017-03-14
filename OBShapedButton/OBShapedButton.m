@@ -27,8 +27,62 @@
  October, 2009
  */
 
+
 #import "OBShapedButton.h"
 #import "UIImage+ColorAtPixel.h"
+
+
+@interface UIImageView (PointConversionCatagory)
+
+@property (nonatomic, readonly) CGAffineTransform viewToImageTransform;
+@property (nonatomic, readonly) CGAffineTransform imageToViewTransform;
+
+@end
+
+@implementation UIImageView (PointConversionCatagory)
+
+-(CGAffineTransform) viewToImageTransform {
+    
+    UIViewContentMode contentMode = self.contentMode;
+    
+    // failure conditions. If any of these are met – return the identity transform
+    if (!self.image || self.frame.size.width == 0 || self.frame.size.height == 0 ||
+        (contentMode != UIViewContentModeScaleToFill && contentMode != UIViewContentModeScaleAspectFill && contentMode != UIViewContentModeScaleAspectFit)) {
+        return CGAffineTransformIdentity;
+    }
+    
+    // the width and height ratios
+    CGFloat rWidth = self.image.size.width/self.frame.size.width;
+    CGFloat rHeight = self.image.size.height/self.frame.size.height;
+    
+    // whether the image will be scaled according to width
+    BOOL imageWiderThanView = rWidth > rHeight;
+    
+    if (contentMode == UIViewContentModeScaleAspectFit || contentMode == UIViewContentModeScaleAspectFill) {
+        
+        // The ratio to scale both the x and y axis by
+        CGFloat ratio = ((imageWiderThanView && contentMode == UIViewContentModeScaleAspectFit) || (!imageWiderThanView && contentMode == UIViewContentModeScaleAspectFill)) ? rWidth:rHeight;
+        
+        // The x-offset of the inner rect as it gets centered
+        CGFloat xOffset = (self.image.size.width-(self.frame.size.width*ratio))*0.5;
+        
+        // The y-offset of the inner rect as it gets centered
+        CGFloat yOffset = (self.image.size.height-(self.frame.size.height*ratio))*0.5;
+        
+        return CGAffineTransformConcat(CGAffineTransformMakeScale(ratio, ratio), CGAffineTransformMakeTranslation(xOffset, yOffset));
+    } else {
+        return CGAffineTransformMakeScale(rWidth, rHeight);
+    }
+}
+
+-(CGAffineTransform) imageToViewTransform {
+    return CGAffineTransformInvert(self.viewToImageTransform);
+}
+
+@end
+
+
+
 
 @interface OBShapedButton ()
 
@@ -69,12 +123,10 @@
 
 - (BOOL)isAlphaVisibleAtPoint:(CGPoint)point forImage:(UIImage *)image
 {
-    // Correct point to take into account that the image does not have to be the same size
-    // as the button. See https://github.com/ole/OBShapedButton/issues/1
-    CGSize iSize = image.size;
-    CGSize bSize = self.bounds.size;
-    point.x *= (bSize.width != 0) ? (iSize.width / bSize.width) : 1;
-    point.y *= (bSize.height != 0) ? (iSize.height / bSize.height) : 1;
+    // Correction for image scaling including contentmode
+    CGPoint pt = CGPointApplyAffineTransform(point, self.imageView.viewToImageTransform);
+    point = pt;
+    
 
     UIColor *pixelColor = [image colorAtPixel:point];
     CGFloat alpha = 0.0;
