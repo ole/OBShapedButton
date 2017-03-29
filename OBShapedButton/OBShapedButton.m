@@ -32,14 +32,14 @@
 #import "UIImage+ColorAtPixel.h"
 
 
-@interface UIImageView (PointConversionCatagory)
+@interface UIImageView (PointConversionCategory)
 
 @property (nonatomic, readonly) CGAffineTransform viewToImageTransform;
 @property (nonatomic, readonly) CGAffineTransform imageToViewTransform;
 
 @end
 
-@implementation UIImageView (PointConversionCatagory)
+@implementation UIImageView (PointConversionCategory)
 
 -(CGAffineTransform) viewToImageTransform {
     
