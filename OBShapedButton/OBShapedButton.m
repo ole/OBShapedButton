@@ -125,6 +125,8 @@
 - (BOOL)isAlphaVisibleAtPoint:(CGPoint)point forImage:(UIImage *)image
 {
     // Correction for image scaling including contentmode
+    point.x = point.x - self.imageView.frame.origin.x;
+    point.y = point.y - self.imageView.frame.origin.y;
     CGPoint pt = CGPointApplyAffineTransform(point, self.imageView.viewToImageTransform);
     point = pt;
     
